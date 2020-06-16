@@ -1,0 +1,17 @@
+theme: jekyll-theme-hacker
+
+url: "https://protogencollection.titusstudios.net/" # the hostname & protocol for your site
+title: Open Source Protogen Collection
+description: Creating FOSS Protogen Setups For Everyone, All the resources for building your own Protogen Fursuit.
+gems: 
+      - jekyll-sitemap
+      
+defaults:
+  -
+    scope:
+      path:            "assets/**/*"
+      path:            "data/**/"
+    values:
+      sitemap:         false
+
+      
