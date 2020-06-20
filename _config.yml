@@ -10,8 +10,8 @@ gems:
 defaults:
   -
     scope:
-      path:            "assets/**/*"
-      path:            "data/**/"
+      path:            "assets/*"
+      path:            "data/*"
     values:
       sitemap:         false
 
