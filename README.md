@@ -53,7 +53,7 @@ fs.readdir(directoryPath, function(err, files) {
 });
 ```
 
-CSS
+CSS:
 ```css
 #main_content {
     max-width: 1000px;
