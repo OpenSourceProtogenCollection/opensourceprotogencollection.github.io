@@ -1,256 +1,113 @@
 <html>
     <head>
         <base href="https://protogencollection.titusstudios.net/">
-        <!--<link rel="stylesheet" href="/assets/css/style.css">-->
-	<script src="/data/static/js/jquery/3.4.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-        <meta name="google-site-verification" content="zyKVZBJaMLd2zAtclQ0NYa-sG0Kp_oCnpQk0iYMKvO8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	{% seo %} 
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <script src="https://www.titusstudios.net/data/static/js/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% seo %} 
     </head>
     <body>
-	<div class="theme-default">
-        <div class="mainheader">
-            <a href="https://www.titusstudios.net">
-		    <div class="logo"></div>
-            </a>
-            <div class="headiconstray">
-                <div class="icontraysidealign" align="right">
-                    <div class="icontrayspacing1">
-                        <div class="home">
-                            <a href="https://www.titusstudios.net">
-                                <div class="traytext">
-                                    <p>Home</p>
-                                </div>
-                            </a>
-                        </div>
+        <div class="container">
+            <section id="main_content">  
+                {{ content }}
 
-                        <div class="projects">
-                            <div class="icontraycolor">
-                                <div class="traytext">
-                                    <p>Projects</p>
-                                </div>
-                            </div>
-				
-			    <div class="fixhover">
-                                <div class="prjdropdown">
-                                    <a href="https://github.com/TitusStudiosMediaGroup/titusstudiosmediagroup.github.io">
-                                        <div class="icontraycolor">
-                                            <div class="traytext">
-                                                <p>Website Codebase</p>
-                                            </div>
-                                        </div>
-                                    </a>                                
-                                </div>
+                <h1 id="hammer-model-browser-background-fix">Hammer Model Browser Background Fix</h1>
 
-                                <div class="prjdropdown">
-                                    <a href="https://github.com/TitusStudiosMediaGroup/OpenControl">
-                                        <div class="icontraycolor">
-                                            <div class="traytext">
-                                                <p>OpenControl</p>
-                                            </div>
-                                        </div>
-                                    </a>                                
-                                </div>
+                <h2 id="scope">Scope</h2>
+                <p>To change the background of the Hammer Editor Model Browser, which in some cases is transparent by default.</p>
 
-                                <div class="prjdropdown">
-                                    <a href="https://github.com/titus-studios-media/PureAir">
-                                        <div class="icontraycolor">
-                                            <div class="traytext">
-                                                <p>PureAir</p>
-                                            </div>
-                                        </div>
-                                    </a>                                
-                                </div>
+                <p><strong>Before:</strong>
+                <img src="https://i.imgur.com/SSbVD3J.jpg" alt="Hammer Model Browser Before Fix" /></p>
 
-                                <div class="prjdropdown">
-                                    <a href="https://github.com/titus-studios-media/GSG-Universal-Gauge-by-Titus">
-                                        <div class="icontraycolor">
-                                            <div class="traytext">
-                                                <p>GSG Universal Gauge</p>
-                                            </div>
-                                        </div>
-                                    </a>                                
-                                </div>
+                <p><strong>After:</strong>
+                <img src="https://i.imgur.com/RMvZl1I.jpg" alt="Hammer Model Browser After Fix" /></p>
 
-                                <div class="prjdropdown">
-                                    <a href="https://github.com/TitusStudiosMediaGroup/brightstar">
-                                        <div class="icontraycolor">
-                                            <div class="traytext">
-                                                <p>BrightStar</p>
-                                            </div>
-                                        </div>
-                                    </a>                                
-                                </div>
-                    
-                                <div class="prjdropdown">
-                                    <a href="https://github.com/titus-studios-media/Monks-MU-Plug-V3-Titus-Edit-Rev4">
-                                        <div class="icontraycolor">
-                                            <div class="traytext">
-                                                <p>Automatic MU Plug</p>
-                                            </div>
-                                        </div>
-                                    </a>                                
-                                </div>
-                    
-                                <div class="hide">
-                                    <div class="prjdropdown">
-                                        <div class="dropdowniconxcolor">
-                                            <a href="">
-                                                <div class="icontraycolor">
-                                                        <div class="traytexticon">
-                                                            <p>BrightStar</p>
-                                                        </div>
-                                                        <div class="dropdowniconx" title="Legacy Project"> 
-                                                            <svg width="20" height="20" class="octicon-x" viewBox="0 0 12 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
-                                                                <path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path>
-                                                            </svg>
-                                                        </div>  
-                                                </div>
-                                            </a>
-                                        </div>                              
-                                    </div>
-				</div>
-                            </div>
-                        </div>
+                <p>First navigate to the Editors Game Directory (ex, <code class="language-plaintext highlighter-rouge">C:\SteamLibrary\steamapps\common\Source SDK Base 2013 Singleplayer\</code>)
+                Once you are in the Games Directory, head to, <code class="language-plaintext highlighter-rouge">\platform\resource</code>, and search for <code class="language-plaintext highlighter-rouge">sourceschemebase.res</code> and open it with a text editor.</p>
 
-                        <div class="github">
-			    <div class="icontraycolor">
-			        <div class="traytext">
-				    <p>GitHub</p>
-			        </div>
-			    </div>
-			
-			    <div class="fixhover">
-                                <div class="prjdropdown">
-                                    <a href="https://github.com/TitusStudiosMediaGroup">
-                                        <div class="icontraycolor">
-                                            <div class="traytext">
-                                                <p>Profile</p>
-                                            </div>
-                                        </div>
-                                    </a>                                
-                                </div>
+                <p>You should see something like this in the file;</p>
 
-                                <div class="prjdropdown">
-                                    <a href="https://github.com/titus-studios-media">
-                                        <div class="icontraycolor">
-                                            <div class="traytext">
-                                                <p>Organization</p>
-                                            </div>
-                                        </div>
-                                    </a>                                
-                                </div>
-                            </div>
-			</div>
+                <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Scheme</span>
+                <span class="p">{</span>
+                    <span class="c1">//////////////////////// COLORS ///////////////////////////</span>
+                    <span class="c1">// color details</span>
+                    <span class="c1">// this is a list of all the colors used by the scheme</span>
+                    <span class="n">Colors</span>
+                    <span class="p">{</span>
+                        <span class="c1">// base colors</span>
+                        <span class="s">"White"</span>				<span class="s">"255 255 255 255"</span>
+                        <span class="s">"OffWhite"</span>			<span class="s">"221 221 221 255"</span>
+                        <span class="s">"DullWhite"</span>			<span class="s">"55 55 55 255"</span>
+                        <span class="s">"Orange"</span>			<span class="s">"255 155 0 255"</span>
+                        <span class="s">"TransparentBlack"</span>	<span class="s">"0 0 0 128"</span>
+                        <span class="s">"Black"</span>				<span class="s">"0 0 0 255"</span>
 
-                        <div class="contact">
-                            <a href="https://www.titusstudios.net/contact">
-                                <div class="icontraycolor">
-                                    <div class="traytext">
-                                        <p>Contact</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <span class="s">"Blank"</span>				<span class="s">"0 0 0 0"</span>
+                        
+                        <span class="s">"SteamLightGreen"</span>	<span class="s">"157 194 80 255"</span>
+                        <span class="s">"AchievementsLightGrey"</span>		<span class="s">"79 79 79 255"</span>
+                        <span class="s">"AchievementsDarkGrey"</span>		<span class="s">"55 55 55 255"</span>
+                        <span class="s">"AchievementsInactiveFG"</span>	<span class="s">"130 130 130 255"</span>
+                    <span class="p">}</span>
+                </code></pre></div></div>
+
+                <p>Under the <code class="language-plaintext highlighter-rouge">BaseSettings</code> confg, find <code class="language-plaintext highlighter-rouge">Panel.BgColor</code> (around line 124)</p>
+
+                <p>Change <code class="language-plaintext highlighter-rouge">"Blank"</code> to one of the color indexs in the <code class="language-plaintext highlighter-rouge">Colors</code> confg.</p>
+
+                <p>Ex, <code class="language-plaintext highlighter-rouge">Panel.BgColor					"Blank"</code> to, <code class="language-plaintext highlighter-rouge">Panel.BgColor					"DullWhite"</code>.</p>
+
+                <p>Save and Exit the file, and restart Hammer.</p>
+
+                <blockquote>
+                <p><strong>NOTE:</strong> This config <strong>might</strong> not save if you verify game files.</p>
+                </blockquote>
+            </section>
         </div>
-	</div>
-
-	<div class="container">
-		<section id="main_content">  
-			{{ content }}
-		</section>
-	</div>
-
-	<div class="theme-default">
-        <footer>
-            <div class="footerinner">
-                <div class="footerlinespace">
-                    <div class="footerline"></div>
-                </div>
-
-                <div class="footerfont">
-                    <p>Copyright © 2020 Titus Studios Media</p>
-                </div>
-
-                <div class="footerfontsub">
-                    <div class="footersubtext">
-                        <p></p>
-                    </div>
-                </div>
-		    
-		<div class="footersocial">
-		    <a href="https://twitter.com/TitusStudiosMG">
-		        <i class="fab fa-twitter"></i>
-		    </a>
-		    <a href="https://t.me/titusstudios">
-		        <i class="fab fa-telegram-plane"></i>
-		    </a>
-		    <a href="https://steamcommunity.com/id/TitusStudiosMediaGroup">
-		        <i class="fab fa-steam"></i>
-		    </a>
-		    <a href="https://www.youtube.com/c/TitusStudios">
-		        <i class="fab fa-youtube"></i>
-		    </a>
-		    <a href="https://github.com/TitusStudiosMediaGroup">
-		        <i class="fab fa-github"></i>
-		    </a>
-		</div>
-            </div>
-        </footer>
-        </div>
-	
-	<div class="theme-voodoo">
-	<svg class="footerwave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#2d2532" fill-opacity="0.5" d="M0,128L60,154.7C120,181,240,235,360,250.7C480,267,600,245,720,245.3C840,245,960,267,1080,272C1200,277,1320,267,1380,261.3L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-        </svg>
 
         <footer>
             <div class="footerinner">
                 <div class="footerlinespace">
                     <div class="footerline"></div>
                 </div>
-
 
                 <div class="footerfont">
                     <div class="footercol">
-                        <p><strong>COMMISSIONS</strong></p>
+                        <p><strong>OUR WORK</strong></p>
 
                         <ul class="footerlist">
                             <li>
-                                <a>Pricing</a>
+                                <a>What We Do</a>
                             </li>
                             <li>
-                                <a>Gallery</a>
+                                <a>Our Projects</a>
                             </li>
                             <li>
-                                <a>List</a>
+                                <a>Our Team</a>
                             </li>
                             <li>
-                                <a>Slots</a>
+                                <a>Contribute</a>
                             </li>
                             <li>
-                                <a>Work in Progress</a>
+                                <a>Get in Touch</a>
                             </li>
                         </ul>
                     </div>
@@ -260,38 +117,42 @@
 
                         <ul class="footerlist">
                             <li>
+                                <a>Github</a>
+                            </li>
+                            <li>
                                 <a>Blog</a>
                             </li>
                             <li>
                                 <a>Updates</a>
                             </li>
+                            <li>
+                                <a>Terms of Service</a>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="footersocial">
-                        <a href="https://twitter.com/fadestorm675">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCPOaLk8yZuKIsSxFrV5f8yg">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                        <i id="themeswitch" class="fas fa-adjust"></i>
                     </div>
 
                     <div class="footerlinespace">
                         <div class="footerline"></div>
                     </div>
 
+                    <div class="copyright-left">
+                        <p>Made with ❤ by <a href="https://www.titusstudios.net">Titus Studios</a></p>
+                    </div>
+
                     <div class="copyright">
-                        <p>Copyright © 2020 Titus Studios Media</p>
+                        <p>Copyright © 2020 Open Source Protogen Collection</p>
                         <div class="copyrightinfo">
                             <a href="">[INFO]</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>	
-	</div>
-</body>
+        </footer>
 
-<script src="/data/static/js/stylesheet-selector.js"></script>
+        <script src="https://www.titusstudios.net/data/static/js/darkmode.js"></script>
+    </body>
 </html>
