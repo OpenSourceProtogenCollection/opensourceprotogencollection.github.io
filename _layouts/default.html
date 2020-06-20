@@ -28,58 +28,6 @@
         <div class="container">
             <section id="main_content">  
                 {{ content }}
-
-                <h1 id="hammer-model-browser-background-fix">Hammer Model Browser Background Fix</h1>
-
-                <h2 id="scope">Scope</h2>
-                <p>To change the background of the Hammer Editor Model Browser, which in some cases is transparent by default.</p>
-
-                <p><strong>Before:</strong>
-                <img src="https://i.imgur.com/SSbVD3J.jpg" alt="Hammer Model Browser Before Fix" /></p>
-
-                <p><strong>After:</strong>
-                <img src="https://i.imgur.com/RMvZl1I.jpg" alt="Hammer Model Browser After Fix" /></p>
-
-                <p>First navigate to the Editors Game Directory (ex, <code class="language-plaintext highlighter-rouge">C:\SteamLibrary\steamapps\common\Source SDK Base 2013 Singleplayer\</code>)
-                Once you are in the Games Directory, head to, <code class="language-plaintext highlighter-rouge">\platform\resource</code>, and search for <code class="language-plaintext highlighter-rouge">sourceschemebase.res</code> and open it with a text editor.</p>
-
-                <p>You should see something like this in the file;</p>
-
-                <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Scheme</span>
-                <span class="p">{</span>
-                    <span class="c1">//////////////////////// COLORS ///////////////////////////</span>
-                    <span class="c1">// color details</span>
-                    <span class="c1">// this is a list of all the colors used by the scheme</span>
-                    <span class="n">Colors</span>
-                    <span class="p">{</span>
-                        <span class="c1">// base colors</span>
-                        <span class="s">"White"</span>				<span class="s">"255 255 255 255"</span>
-                        <span class="s">"OffWhite"</span>			<span class="s">"221 221 221 255"</span>
-                        <span class="s">"DullWhite"</span>			<span class="s">"55 55 55 255"</span>
-                        <span class="s">"Orange"</span>			<span class="s">"255 155 0 255"</span>
-                        <span class="s">"TransparentBlack"</span>	<span class="s">"0 0 0 128"</span>
-                        <span class="s">"Black"</span>				<span class="s">"0 0 0 255"</span>
-
-                        <span class="s">"Blank"</span>				<span class="s">"0 0 0 0"</span>
-                        
-                        <span class="s">"SteamLightGreen"</span>	<span class="s">"157 194 80 255"</span>
-                        <span class="s">"AchievementsLightGrey"</span>		<span class="s">"79 79 79 255"</span>
-                        <span class="s">"AchievementsDarkGrey"</span>		<span class="s">"55 55 55 255"</span>
-                        <span class="s">"AchievementsInactiveFG"</span>	<span class="s">"130 130 130 255"</span>
-                    <span class="p">}</span>
-                </code></pre></div></div>
-
-                <p>Under the <code class="language-plaintext highlighter-rouge">BaseSettings</code> confg, find <code class="language-plaintext highlighter-rouge">Panel.BgColor</code> (around line 124)</p>
-
-                <p>Change <code class="language-plaintext highlighter-rouge">"Blank"</code> to one of the color indexs in the <code class="language-plaintext highlighter-rouge">Colors</code> confg.</p>
-
-                <p>Ex, <code class="language-plaintext highlighter-rouge">Panel.BgColor					"Blank"</code> to, <code class="language-plaintext highlighter-rouge">Panel.BgColor					"DullWhite"</code>.</p>
-
-                <p>Save and Exit the file, and restart Hammer.</p>
-
-                <blockquote>
-                <p><strong>NOTE:</strong> This config <strong>might</strong> not save if you verify game files.</p>
-                </blockquote>
             </section>
         </div>
 
