@@ -270,11 +270,13 @@ footer {
     display: none;
 }
 
-.footerwave {
-    z-index: 10;
-    position: absolute;
-    bottom: 3px;
-    pointer-events: none;
+.footernotes {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: var(--footer-text);
+    opacity: 0.5;
+    font-size: 11px;
+    float: right;
 }
 
 .container {
