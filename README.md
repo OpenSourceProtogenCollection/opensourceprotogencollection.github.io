@@ -83,11 +83,12 @@ h1 {
 }
 ```
 
-GHAPI:
-
+GHAPI TEMPLATE:
 ```
 https://api.github.com/repos/OpenSourceProtogenCollection/website/git/trees/master?recursive=1
 ```
+Rest API Docs:
+[https://developer.github.com/v3/](https://developer.github.com/v3/)
 
 Test Test, Hello World!
 
