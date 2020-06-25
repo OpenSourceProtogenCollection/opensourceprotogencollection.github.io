@@ -24,6 +24,7 @@ $blockquote-border: $dove-grey !default;
     --backquote-text: #696969;
     --code-bkg: rgba(27, 31, 35, 0.05);
     --hover-bkg: rgba(0, 0, 0, 0.5);
+    --image-invert: none;
 }
 
 .darkmode {
@@ -37,7 +38,7 @@ $blockquote-border: $dove-grey !default;
     --backquote-bkg: rgba(27, 31, 35, 0.5);
     --backquote-text: #989898;
     --code-bkg: rgba(27, 31, 35, 0.5);
-    --image-invert: 100%;
+    --image-invert: invert(100%);
     --contrib-bkg: rgba(27, 31, 35, 0.5);
     --hover-bkg: rgba(255, 255, 255, 0.5);
 }
@@ -439,7 +440,7 @@ table tr:nth-child(2n) {
 
 .icon-link {
     max-width: 2em;
-    filter: invert(var(--image-invert));
+    filter: var(--image-invert);
     box-shadow: none;
     margin: 0.5em;
     transition: all 0.4s ease;
