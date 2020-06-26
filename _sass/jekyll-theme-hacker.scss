@@ -108,6 +108,11 @@ footer {
     padding: 90px 0 0 0;
 }
 
+.footerlinespacetop {
+    max-width: 1000px;
+    margin: auto;
+}
+
 .footerline {
     border-bottom: solid 1px var(--footer-text);
     opacity: 0.5;
@@ -649,4 +654,17 @@ iframe {
 
 .tippy-box[data-theme~='translucent'] {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+.backtotop {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: .75px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    color: var(--footer-text);
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
 }
