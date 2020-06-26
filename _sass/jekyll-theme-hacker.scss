@@ -383,6 +383,10 @@ img {
     margin: 0;
 }
 
+div .highlighter-rouge {
+    margin: 10px 0 10px;
+}
+
 code {
     padding: .2em .4em;
     margin: 0;
@@ -412,7 +416,7 @@ blockquote {
     margin: 0;
     background-color: var(--backquote-bkg);
     border-radius: 3px;
-    margin: 0 0 4px;
+    margin: 5px 0 5px;
 }
 
 table {
