@@ -54,20 +54,103 @@
         <section id="main_content">
             {{ content }}
 
+            <h1 id="open-source-protogen-collection">Open Source Protogen Collection</h1>
+            <p>Hi! Welcome to the Home Page of the Open Source Protogen Collection, which is a collective of Developers, Fursuit Makers, and many more, making resources for people wanting to make Protogen Fursuits.</p>
+            
+            <h2 id="we-are-still-in-the-process-of-building-our-website">We are still in the process of building our Website</h2>
+            <p>So if you find any bugs leave a Issue on the <a data-tippy-content="Enable/Disable Darkmode" href="https://github.com/OpenSourceProtogenCollection/website">Github Page!</a></p>
+            
+            <h2 id="dont-mind-the-garbage-below-here-it-is-for-our-developers-to-test-out-new-features-thank-you">Dont mind the garbage below here, it is for our Developers to test out new features. Thank you.</h2>
+            
+            <p>JS:</p>
+            <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="p">{</span> <span class="nx">ipcRenderer</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">electron</span><span class="dl">'</span><span class="p">);</span>
+            <span class="kd">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">fs</span><span class="dl">'</span><span class="p">);</span>
+            <span class="kd">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">path</span><span class="dl">'</span><span class="p">);</span>
+            <span class="kd">const</span> <span class="nx">directoryPath</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="dl">'</span><span class="s1">/audio</span><span class="dl">'</span><span class="p">);</span>
+            
+            <span class="kd">function</span> <span class="nx">removeCard</span><span class="p">(</span><span class="nx">CardIDRC</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kd">var</span> <span class="nx">audioSourceElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">((</span><span class="nx">CardIDRC</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">audiosource</span><span class="dl">'</span><span class="p">));</span>
+                <span class="kd">var</span> <span class="nx">audioFilePath</span> <span class="o">=</span> <span class="nx">audioSourceElement</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">src</span><span class="dl">'</span><span class="p">);</span>
+                <span class="kd">var</span> <span class="nx">fileName</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">basename</span><span class="p">((</span><span class="nx">audioFilePath</span><span class="p">.</span><span class="nx">toString</span><span class="p">()))</span>
+                <span class="kd">var</span> <span class="nx">fullPath</span> <span class="o">=</span> <span class="p">(</span><span class="nx">directoryPath</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">/</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">fileName</span><span class="p">)</span>
+                <span class="kd">var</span> <span class="nx">cardElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">CardIDRC</span><span class="p">);</span>
+            
+                <span class="kd">let</span> <span class="nx">removeCardConfirmData</span> <span class="o">=</span> <span class="p">{</span>
+                    <span class="na">data</span><span class="p">:</span> <span class="mi">1</span>
+                <span class="p">};</span>
+            
+                <span class="nx">ipcRenderer</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="dl">'</span><span class="s1">backendrequest-DeleteConfirm</span><span class="dl">'</span><span class="p">,</span> <span class="nx">removeCardConfirmData</span><span class="p">);</span>
+            
+                <span class="nx">ipcRenderer</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">frontendrequest-DeleteConfirmed</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">arg</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="nx">arg</span><span class="p">.</span><span class="nx">rdata</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="nx">cardElement</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">none</span><span class="dl">"</span><span class="p">;</span>
+            
+                        <span class="nx">fs</span><span class="p">.</span><span class="nx">unlink</span><span class="p">(</span><span class="nx">fullPath</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                            <span class="k">if</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+                                <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+                            <span class="p">}</span>
+                        <span class="p">});</span> 
+                    <span class="p">}</span>
+                <span class="p">});</span>
+            <span class="p">}</span>
+            
+            <span class="nx">fs</span><span class="p">.</span><span class="nx">readdir</span><span class="p">(</span><span class="nx">directoryPath</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">files</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Unable to fetch directory: </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">err</span><span class="p">);</span>
+                <span class="p">}</span> 
+            
+                <span class="nx">files</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="kd">var</span> <span class="nx">unicardID</span> <span class="o">=</span> <span class="p">(</span><span class="dl">'</span><span class="s1">_</span><span class="dl">'</span> <span class="o">+</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">().</span><span class="nx">toString</span><span class="p">(</span><span class="mi">36</span><span class="p">).</span><span class="nx">substr</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
+                    <span class="kd">var</span> <span class="nx">cardname</span> <span class="o">=</span> <span class="nx">file</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="dl">'</span><span class="s1">.mp3</span><span class="dl">'</span><span class="p">,</span><span class="dl">''</span><span class="p">);</span>
+            
+                    <span class="nx">createcard</span><span class="p">(</span><span class="nx">unicardID</span><span class="p">,</span><span class="nx">cardname</span><span class="p">,(</span><span class="dl">"</span><span class="s2">audio/</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">file</span><span class="p">))</span>
+                <span class="p">});</span>
+            <span class="p">});</span>
+            </code></pre></div></div>
+            
+            <p>CSS:</p>
+            <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#main_content</span> <span class="p">{</span>
+                <span class="nl">max-width</span><span class="p">:</span> <span class="m">1000px</span><span class="p">;</span>
+                <span class="nl">margin</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+                <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span> <span class="m">0</span> <span class="m">50px</span> <span class="m">0</span><span class="p">;</span>
+                <span class="nl">font-family</span><span class="p">:</span> <span class="n">-apple-system</span><span class="p">,</span><span class="n">BlinkMacSystemFont</span><span class="p">,</span><span class="n">Segoe</span> <span class="n">UI</span><span class="p">,</span><span class="n">Helvetica</span><span class="p">,</span><span class="n">Arial</span><span class="p">,</span><span class="nb">sans-serif</span><span class="p">,</span><span class="n">Apple</span> <span class="n">Color</span> <span class="n">Emoji</span><span class="p">,</span><span class="n">Segoe</span> <span class="n">UI</span> <span class="n">Emoji</span><span class="p">;</span>
+                <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+                <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.5</span><span class="p">;</span>
+                <span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--text</span><span class="p">);</span>
+                <span class="nl">margin-top</span><span class="p">:</span> <span class="m">0</span> <span class="cp">!important</span><span class="p">;</span>
+                <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">16px</span> <span class="cp">!important</span><span class="p">;</span>    
+            <span class="p">}</span>
+            
+            <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
+                <span class="nl">font-family</span><span class="p">:</span> <span class="n">Helvetica</span><span class="p">;</span>
+                <span class="c">/*font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;*/</span>
+                <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.3</span><span class="p">;</span>
+                <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">-0.75px</span><span class="p">;</span>
+                <span class="nl">-webkit-font-smoothing</span><span class="p">:</span> <span class="n">antialiased</span><span class="p">;</span>
+                <span class="nl">font-weight</span><span class="p">:</span> <span class="m">100</span><span class="p">;</span>    
+            <span class="p">}</span>
+            
+            <span class="nt">h1</span> <span class="p">{</span>
+                <span class="nl">font-size</span><span class="p">:</span> <span class="m">36px</span><span class="p">;</span>
+                <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">.3em</span><span class="p">;</span>
+                <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#eaecef</span><span class="p">;</span>
+            <span class="p">}</span>
+            </code></pre></div></div>
+            
+            <p>GHAPI TEMPLATE:</p>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://api.github.com/repos/OpenSourceProtogenCollection/website/git/trees/master?recursive=1
+            </code></pre></div></div>
+            <p>Rest API Docs:
+            <a data-tippy-content="Enable/Disable Darkmode" href="https://developer.github.com/v3/">https://developer.github.com/v3/</a></p>
+            
+            <p>Test Test, Hello World!</p>
+            
             <blockquote>
-                <p><strong>NOTE:</strong> This is a note, WOWIE!!</p>
+              <p><strong>NOTE:</strong> This is a note, WOWIE!!</p>
             </blockquote>
-
+            
             <blockquote>
-                <p><strong>INFO:</strong> This is a info, WOWIE!!</p>
-            </blockquote>
-
-            <blockquote>
-                <p><strong>CAUTION:</strong> This is a caution, WOWIE!!</p>
-            </blockquote>
-
-            <blockquote>
-                <p><strong>WARNING:</strong> This is a warning, WOWIE!!</p>
+              <p>This is a normal backquote.</p>
             </blockquote>
         </section>
     </div>
@@ -122,7 +205,7 @@
                 </div>
 
                 <div class="footersocial">
-                    <i id="themeswitch" class="fas fa-adjust" data-tippy-content="Enable/Disable Darkmode" ></i>
+                    <i id="themeswitch" class="fas fa-adjust" data-tippy-content="Enable/Disable Darkmode"></i>
                 </div>
 
                 <div class="footerlinespace">
@@ -154,10 +237,11 @@
     <script>
         tippy('[data-tippy-content]', {
             theme: 'translucent',
+            appendTo: document.body,
         });
     </script>
-    <script src="https://www.titusstudios.net/data/static/js/darkmode.js"></script>
-    <script src="https://www.titusstudios.net/data/static/js/blockquote-bkgselector.js"></script>
+    <script src="https://protogencollection.titusstudios.net/data/static/js/darkmode.js"></script>
+    <script src="https://protogencollection.titusstudios.net/data/static/js/blockquote-bkgselector.js"></script>
     <script>
         function backToTop() {
             document.body.scrollTop = 0;
