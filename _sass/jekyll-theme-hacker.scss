@@ -698,3 +698,51 @@ img.emoji {
     width: auto;
     box-shadow: none;
 }
+
+.navmobile {
+    font-family: Helvetica;
+    /*font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: .75px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    color: var(--footer-text);
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px 0 0 0;
+    z-index: 10;
+}
+
+.navlist {
+    list-style: none;
+    margin: 0;
+    margin-top: 12px;
+    padding: 0;
+    /*letter-spacing: 1.4px;*/
+}
+
+.navcol {
+    width: fit-content;
+    display: inline-grid;
+    margin-right: 50px;
+    margin-top: 25px;
+}
+
+.navlist li {
+    margin-top: 5px;
+}
+
+.navlist li a {
+    opacity: 0.5;
+    cursor: pointer;
+    color: var(--footer-text);
+}
+
+.navlist li a:hover {
+    opacity: 1;
+}
+
+.navmobile a {
+    text-decoration: none;
+}
