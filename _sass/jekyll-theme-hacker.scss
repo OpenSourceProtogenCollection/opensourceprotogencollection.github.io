@@ -23,10 +23,10 @@ $blockquote-border: $dove-grey !default;
 
     --backquote-text: #696969;
     --backquote-bkg: rgba(27, 31, 35, 0.05);
-    --backquote-bkg-indigo: rgba(94, 92, 230, 0.05);
-    --backquote-bkg-orange: rgba(255, 159, 10, 0.05);
-    --backquote-bkg-red: rgba(255, 69, 58, 0.05);
-    --backquote-bkg-green: rgba(50, 215, 75, 0.05);
+    --backquote-bkg-indigo: rgba(94, 92, 230, 0.2);
+    --backquote-bkg-orange: rgba(255, 159, 10, 0.2);
+    --backquote-bkg-red: rgba(255, 69, 58, 0.2);
+    --backquote-bkg-green: rgba(50, 215, 75, 0.2);
 }
 
 .darkmode {
@@ -45,10 +45,10 @@ $blockquote-border: $dove-grey !default;
 
     --backquote-text: #989898;
     --backquote-bkg: rgba(27, 31, 35, 0.5);
-    --backquote-bkg-indigo: rgba(94, 92, 230, 0.05);
-    --backquote-bkg-orange: rgba(255, 159, 10, 0.05);
-    --backquote-bkg-red: rgba(255, 69, 58, 0.05);
-    --backquote-bkg-green: rgba(50, 215, 75, 0.05);
+    --backquote-bkg-indigo: rgba(94, 92, 230, 0.2);
+    --backquote-bkg-orange: rgba(255, 159, 10, 0.2);
+    --backquote-bkg-red: rgba(255, 69, 58, 0.2);
+    --backquote-bkg-green: rgba(50, 215, 75, 0.2);
 }
 
 body {
