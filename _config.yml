@@ -7,6 +7,9 @@ logo: /data/static/images/icon-transparent.png
 gems: 
       - jekyll-sitemap
       
+plugins:
+  - jemoji
+      
 defaults:
   -
     scope:
