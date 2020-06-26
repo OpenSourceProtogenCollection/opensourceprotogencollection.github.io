@@ -1,7 +1,6 @@
 <html>
-
 <head>
-    <base href="https://protogencollection.titusstudios.net/">
+    <link rel=stylesheet href="_sass/jekyll-theme-hacker.scss">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <script src="https://www.titusstudios.net/data/static/js/jquery/3.4.1/jquery.min.js"></script>
@@ -59,14 +58,18 @@
 </head>
 
 <body>
-    <div class="nav">
+    <div class="nav" id="top">
         <div class="navcontainer">
-            <div class="navlogo"></div>
+            <a href="https://protogencollection.titusstudios.net">
+                <div class="navlogo"></div>
+            </a>
             <div class="navline"></div>
             <div class="navtext">
-                <div class="navtextheader">
-                    <p><strong>Open Source Protogen Collection</strong></p>
-                </div>
+                <a class="nolink" href="https://protogencollection.titusstudios.net">
+                    <div class="navtextheader">
+                        <p><strong>Open Source Protogen Collection</strong></p>
+                    </div>
+                </a>
             </div>
             <div class="navquicklinks">
                 <a href="https://protogencollection.titusstudios.net/blog">Blog</a>
@@ -109,6 +112,9 @@
     </div>
     <footer>
         <div class="footerinner">
+            <div class="footerfont toplink">
+                <a href="#top">TO TOP</a>
+            </div>
             <div class="footerlinespace">
                 <div class="footerline"></div>
             </div>
@@ -128,7 +134,7 @@
                             <a href="https://protogencollection.titusstudios.net/contributors">Our Team and Contributors</a>
                         </li>
                         <li>
-                            <a>Contribute</a>
+                            <a href="#">Contribute</a>
                         </li>
                         <li>
                             <a href="https://protogencollection.titusstudios.net/contact">Get in Touch</a>
