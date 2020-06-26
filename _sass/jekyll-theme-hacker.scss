@@ -702,35 +702,32 @@ img.emoji {
 .navmobile {
     font-family: Helvetica;
     /*font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.3;
     letter-spacing: .75px;
     -webkit-font-smoothing: antialiased;
     font-weight: 100;
     color: var(--footer-text);
-    max-width: 1000px;
     margin: auto;
-    padding: 15px 0 0 0;
     z-index: 10;
+    text-align: center;
 }
 
 .navlist {
     list-style: none;
     margin: 0;
-    margin-top: 12px;
     padding: 0;
-    /*letter-spacing: 1.4px;*/
 }
 
 .navcol {
-    width: fit-content;
-    display: inline-grid;
-    margin-right: 50px;
-    margin-top: 25px;
+    padding: 10px;
+    background-color: var(--nav-bkg);
 }
 
 .navlist li {
-    margin-top: 5px;
+    background-color: var(--nav-bkg);
+    padding: 10px 10px 10px 10px;
+    border-top: solid 1px #6b6b6d66;
 }
 
 .navlist li a {
@@ -745,4 +742,8 @@ img.emoji {
 
 .navmobile a {
     text-decoration: none;
+}
+
+.fa-bars {
+    color: #bbb;
 }
