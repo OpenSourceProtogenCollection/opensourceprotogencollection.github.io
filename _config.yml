@@ -6,9 +6,7 @@ description: Creating FOSS Protogen Setups For Everyone, All the resources for b
 logo: /data/static/images/icon-transparent.png
 gems: 
       - jekyll-sitemap
-      
-plugins:
-  - jemoji
+      - jemoji
       
 defaults:
   -
