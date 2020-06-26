@@ -53,6 +53,22 @@
     <div class="container">
         <section id="main_content">
             {{ content }}
+
+            <blockquote>
+                <p><strong>NOTE:</strong> This is a note, WOWIE!!</p>
+            </blockquote>
+
+            <blockquote>
+                <p><strong>INFO:</strong> This is a info, WOWIE!!</p>
+            </blockquote>
+
+            <blockquote>
+                <p><strong>CAUTION:</strong> This is a caution, WOWIE!!</p>
+            </blockquote>
+
+            <blockquote>
+                <p><strong>WARNING:</strong> This is a warning, WOWIE!!</p>
+            </blockquote>
         </section>
     </div>
 
@@ -146,6 +162,12 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+    </script>
+
+    <script>
+        $('blockquote:contains("NOTE:")').css('background-color', 'var(--backquote-bkg)');
+        $('blockquote:contains("WARNING:")').css('background-color', 'var(--backquote-bkg-red)');
+        $('blockquote:contains("CAUTION:")').css('background-color', 'var(--backquote-bkg-orange)');
     </script>
 </body>
 
