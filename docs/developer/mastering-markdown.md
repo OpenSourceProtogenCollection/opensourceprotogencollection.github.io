@@ -22,7 +22,7 @@ Here’s an overview of Markdown syntax that you can use anywhere on our site.
 ###### This is an <h6> tag
 ```
 
-> **NOTE:** The 3rd Header tag (`<h3>`/`###`) is reserved for **Custom Page Naming**. A page will give itself an HTML Page Title (What you see at the top of the screen, and what will show up on a Search Engine (eg, Google, Firefox, etc)), based on either the first Header Tag (only works with tags, H1, H2, and H3) or if that is unavailable, the filename. If you want to overwrite this, you put a 3rd Header Tag (`<h3>`/`###`) on the First Line of the page and write your title there.
+> **INFO:** The 3rd Header tag (`<h3>`/`###`) is reserved for **Custom Page Naming**. A page will give itself an HTML Page Title (What you see at the top of the screen, and what will show up on a Search Engine (eg, Google, Firefox, etc)), based on either the first Header Tag (only works with tags, H1, H2, and H3) or if that is unavailable, the filename. If you want to overwrite this, you put a 3rd Header Tag (`<h3>`/`###`) on the First Line of the page and write your title there.
 
 #### Emphasis
 ```
@@ -64,7 +64,7 @@ Format: ![Alt Text](url)
 [http://github.com](http://github.com)
 ```
 
-> **NOTE:** Automatic link creation is not yet supported in Jekyll (The code that turns the Markdown into an HTML Page). If you just put a link down (eg, `http://github.com`) it will not become a link. You must incase it like you would normal text. (eg, `[http://github.com](http://github.com)`)
+> **INFO:** Automatic link creation is not yet supported in Jekyll (The code that turns the Markdown into an HTML Page). If you just put a link down (eg, `http://github.com`) it will not become a link. You must incase it like you would normal text. (eg, `[http://github.com](http://github.com)`)
 
 #### Blockquotes
 ```
