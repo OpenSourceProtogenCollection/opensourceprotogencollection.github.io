@@ -462,7 +462,6 @@ iframe {
     font-family: "Helvetica", sans-serif;
     text-align: center;
     font-weight: bold;
-    transition: all 300ms;
 }
 
 .index-nav a {
@@ -472,6 +471,7 @@ iframe {
     margin: 0.5em;
     padding: 0.5em;
     border-radius: 3px;
+    transition: all 300ms;
 }
 
 .index-nav a:hover {
