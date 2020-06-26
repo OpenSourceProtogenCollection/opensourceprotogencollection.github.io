@@ -381,7 +381,6 @@ img {
     padding: 15px;
     width: fit-content;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0);
 }
 
 code {
@@ -395,7 +394,7 @@ pre code {
     padding: 0;
 }
 
-.language-plaintext {
+code .language-plaintext {
     padding: .2em .4em;
     margin: 0;
     font-size: 13px;
