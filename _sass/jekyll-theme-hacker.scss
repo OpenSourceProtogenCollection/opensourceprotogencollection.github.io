@@ -383,15 +383,15 @@ img {
     margin: 0;
 }
 
-pre code {
-    padding: none;
-}
-
 code {
     padding: .2em .4em;
     margin: 0;
     font-size: 13px;
     border-radius: 3px;
+}
+
+pre code {
+    padding: none;
 }
 
 .language-plaintext {
