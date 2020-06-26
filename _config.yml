@@ -5,8 +5,8 @@ title: Open Source Protogen Collection
 description: Creating FOSS Protogen Setups For Everyone, All the resources for building your own Protogen Fursuit.
 logo: /data/static/images/icon-transparent.png
 gems: 
-      - jekyll-sitemap
       - jemoji
+      - jekyll-sitemap
       
 defaults:
   -
