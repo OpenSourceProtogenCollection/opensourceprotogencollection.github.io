@@ -41,19 +41,20 @@
                     <p><strong>Open Source Protogen Collection</strong></p>
                 </div>
             </div>
+
             <div class="navquicklinks">
                 <a href="https://protogencollection.titusstudios.net/blog">Blog</a>
                 <a href="https://github.com/OpenSourceProtogenCollection">Our Projects</a>
                 <a>Contribute</a>
                 <a href="https://protogencollection.titusstudios.net/contact">Get in Touch</a>
             </div>
+
+            <div class="navmobilebutton">
+                <i onclick="mobilenav()" class="fas fa-bars"></i>
+            </div>
         </div>
 
-        <div class="navmobilebutton">
-            <i class="fas fa-bars"></i>
-        </div>
-
-        <div class="navmobile">
+        <div id="navmobilemenu" class="navmobile">
             <div class="navcol">
                 <ul class="navlist">
                     <li>
@@ -172,6 +173,18 @@
         function backToTop() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script>
+        function mobilenav() {
+            var navmenu = document.getElementById("navmobilemenu");
+
+            if (navmenu.style.display == "block") {
+                navmenu.style.display = "none";
+            } else {
+                navmenu.style.display = "block";
+            }
         }
     </script>
 </body>

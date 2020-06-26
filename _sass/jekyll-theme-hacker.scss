@@ -754,8 +754,11 @@ img.emoji {
 }
 
 @media screen and (max-width: 460px) {
-    .navtextheader {
-        font-size: 12px;
-        margin-top: 24px;
+    .navtext {
+        display: none;
+    }
+
+    .navline {
+        display: none;
     }
 }
