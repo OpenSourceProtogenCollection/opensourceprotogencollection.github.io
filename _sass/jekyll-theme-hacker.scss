@@ -168,7 +168,6 @@ footer {
     max-width: 1000px;
     text-align: end;
     margin: auto;
-    display: inline-block;
     float: right;
     margin-top: 25px;
 }
@@ -529,7 +528,6 @@ iframe {
 }
 
 .nav {
-    height: 60px;
     font-family: Helvetica;
     /*font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-size: 13px;
@@ -658,11 +656,15 @@ iframe {
     .navquicklinks {
         display: none;
     }
+
+    .navmobilebutton {
+        display: block;
+    }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 460px) {
     .navtextheader {
-        font-size: 13px;
+        font-size: 12px;
         margin-top: 24px;
     }
 }
@@ -709,8 +711,9 @@ img.emoji {
     font-weight: 100;
     color: var(--footer-text);
     margin: auto;
-    z-index: 10;
+    z-index: 999;
     text-align: center;
+    position: relative;
 }
 
 .navlist {
@@ -746,4 +749,12 @@ img.emoji {
 
 .fa-bars {
     color: #bbb;
+    cursor: pointer;
+}
+
+.navmobilebutton {
+    float: right;
+    font-size: 26px;
+    margin-top: 16px;
+    display: none;
 }
