@@ -25,6 +25,7 @@ $blockquote-border: $dove-grey !default;
     --code-bkg: rgba(27, 31, 35, 0.05);
     --hover-bkg: rgba(0, 0, 0, 0.5);
     --image-invert: none;
+    --link-bkg: rgba(200, 200, 200, 0.5);
 }
 
 .darkmode {
@@ -41,6 +42,7 @@ $blockquote-border: $dove-grey !default;
     --image-invert: invert(100%);
     --contrib-bkg: rgba(27, 31, 35, 0.5);
     --hover-bkg: rgba(255, 255, 255, 0.5);
+    --link-bkg: rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -443,7 +445,7 @@ table tr:nth-child(2n) {
     filter: var(--image-invert);
     box-shadow: none;
     margin: 0.5em;
-    transition: all 0.4s ease;
+    transition: all 300ms;
 }
 
 .icon-link:hover {
@@ -454,6 +456,41 @@ table tr:nth-child(2n) {
 iframe {
     margin: auto;
     width: -webkit-fill-available;
+}
+
+.index-nav {
+    font-family: "Helvetica", sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.index-nav a {
+    opacity: 0;
+    color: var(--text);
+    background-color: var(--link-bkg);
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 3px;
+}
+
+.index-nav a:hover {
+    background-color: var(--hover-bkg);
+}
+
+.index-nav-blog {
+    animation: fadein-welcome 1s 2500ms forwards;
+}
+
+.index-nav-projects {
+    animation: fadein-welcome 1s 2750ms forwards;
+}
+
+.index-nav-contribute {
+    animation: fadein-welcome 1s 3000ms forwards;
+}
+
+.index-nav-contact {
+    animation: fadein-welcome 1s 3250ms forwards;
 }
 
 .nav {
@@ -527,6 +564,59 @@ iframe {
 
 .navquicklinks a:hover {
     opacity: 1;
+}
+
+.nolink {
+    text-decoration: none;
+    color: white;
+}
+
+.toplink {
+    text-align: center;
+}
+
+.toplink a {
+    color: white;
+    scroll-behavior: smooth;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 5px;
+    border-radius: 3px;
+    transition: all 300ms;
+}
+
+.toplink a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.welcometext {
+    text-align: center;
+    font-family: "Helvetica", sans-serif;
+}
+
+.welcome-header {
+    opacity: 0;
+    position: relative;
+    animation: fadein-welcome 1s 500ms forwards;
+    font-size: 4em;
+}
+
+.welcome-subheader {
+    position: relative;
+    opacity: 0;
+    font-size: 2em;
+    animation: fadein-welcome 1s 1500ms forwards;
+}
+
+@keyframes fadein-welcome {
+    from {
+        opacity: 0;
+        top: -20px
+    }
+
+    to {
+        opacity: 1;
+        top: 0px;
+    }
 }
 
 @media screen and (max-width: 750px) {
