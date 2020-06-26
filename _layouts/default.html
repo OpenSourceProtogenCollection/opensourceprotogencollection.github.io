@@ -60,7 +60,7 @@
         <div class="footerinner">
             <div class="footerlinespacetop">
                 <div class="backtotop">
-                    <p>Back to Top</p>
+                    <p onclick="backToTop()">Back to Top</p>
                 </div>
 
                 <div class="footerline"></div>
@@ -114,7 +114,7 @@
                 </div>
 
                 <div class="copyright-left">
-                    <p>Made with ❤ by <a href="https://twitter.com/TitusStudiosMG">Titus Studios</a></p>
+                    <p>Made with ❤ by <a href="https://twitter.com/TitusStudiosMG">Titus Studios</a> & Contributors</p>
                 </div>
 
                 <div class="copyright">
@@ -140,6 +140,12 @@
         tippy('[data-tippy-content]', {
             theme: 'translucent',
         });
+    </script>
+    <script>
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 
