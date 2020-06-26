@@ -8,8 +8,8 @@ We love your input! We want to make contributing to this project as easy and tra
 - Proposing new features
 - Becoming a maintainer
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. 
+When contributing to the repositories in OSPC, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of the repository before making a change. 
 
 ## Where to Start
 
