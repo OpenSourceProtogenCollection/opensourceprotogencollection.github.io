@@ -82,7 +82,7 @@ I think you should use an
 `<addr>` element here instead.
 ```
 
-For more Info and Examples, goto: [https://guides.github.com/features/mastering-markdown/]
+For more Info and Examples, goto: [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
 
 
 ## It's not the End of the World if you made a Mistake
