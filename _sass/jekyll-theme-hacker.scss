@@ -458,6 +458,16 @@ iframe {
     width: -webkit-fill-available;
 }
 
+.index-header {
+    font-size: 4em;
+    font-family: "Helvetica", sans-serif;
+}
+
+.index-subheader {
+    font-size: 2em;
+    font-size: "Helvetica", sans-serif;
+}
+
 .index-nav {
     font-family: "Helvetica", sans-serif;
     text-align: center;
@@ -492,6 +502,10 @@ iframe {
 
 .index-nav-contact {
     animation: fadein-welcome 1s 3250ms forwards;
+}
+
+.index-spacer {
+    padding-top: 5em;
 }
 
 .nav {
