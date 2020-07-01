@@ -76,6 +76,11 @@ a {
     margin: 0 35px;
 }
 
+.footerinner p,
+.navtext p {
+    margin: 0;
+}
+
 .contributor-div {
     background-color: var(--contrib-bkg);
     text-align: center;
@@ -669,11 +674,6 @@ img.emoji {
 .hide,
 h3 {
     display: none;
-}
-
-.footerinner p,
-.navtext p {
-    margin: 0;
 }
 
 .fa-telegram-plane,
