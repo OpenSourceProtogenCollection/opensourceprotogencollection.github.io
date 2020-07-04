@@ -710,6 +710,10 @@ h3 {
     text-decoration: none;
 }
 
+.footerfont a:hover {
+    text-decoration: underline;
+}
+
 @-webkit-keyframes fadein-welcome {
     from {
         opacity: 0;
