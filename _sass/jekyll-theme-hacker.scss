@@ -705,6 +705,10 @@ h3 {
     color: var(--footer-text);
 }
 
+.footerlist li a {
+    text-decoration: none;
+}
+
 .footerfont a,
 .navmobile a {
     text-decoration: none;
