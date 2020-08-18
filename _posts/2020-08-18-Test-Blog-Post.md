@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "Welcome to Jekyll!"
+---
+
 # OpenControl
 An Open Source Locomotive Control Chip for Garry's Mod built on Wiremod's Expression 2 Environment
 
