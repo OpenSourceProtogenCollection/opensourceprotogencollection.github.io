@@ -2,11 +2,9 @@
 layout: blog
 title: "Mastering Markdown"
 category: "Developer"
-description: "Testing out Jekyll Front Matter, its pretty cool!"
+description: "Markdown is a simple, easy-to-use file syntax for styling all forms of writing. This is what the Open Source Protogen Collection uses, in combination with [Jekyll](https://jekyllrb.com/), to make documents, blog posts, updates, etc... on our site."
 tags: Developer Markdown Docs "Two Words"
 ---
-
-Markdown is a simple, easy-to-use file syntax for styling all forms of writing. This is what the Open Source Protogen Collection uses, in combination with [Jekyll](https://jekyllrb.com/), to make documents, blog posts, updates, etc... on our site.
 
 > **NOTE:** This will be a simple overview of Markdown, you can find more info at: [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
 
