@@ -768,3 +768,130 @@ h3 {
         display: none;
     }
 }
+
+.blogcategory p, .blogtitle p, .blogdesc p, .blogtag p {
+    margin: 0;
+}
+
+.blogcontent {
+    max-width: 1000px;
+    margin: auto;
+    padding: 5px;
+}
+
+.blogpostcontent {
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px 15px 0 15px;
+}
+
+.blogcategory {
+    font-family: Inter,sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.5;
+    color: #1074e7;
+    margin-top: 15px;
+    display: none;
+}
+
+.blogtitle {
+    font-family: Inter,sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.5;
+    color: var(--text);
+    margin-top: 15px;
+}
+
+.blogdesc {
+    font-family: Inter,sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: -0.25px;
+    color: var(--text);
+}
+
+.blogline {
+    border-bottom: #e1e4e8 solid 1px;
+    max-width: 200px;
+    margin-top: 15px;
+}
+
+.blogtags {
+    margin-top: 15px;
+}
+
+.blogtag {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--backquote-text);
+    background-color: var(--backquote-bkg);
+    padding: 3px 15px;
+    line-height: 22px;
+    border-radius: 2em;
+    margin: 0 .125em .333em 0;
+}
+
+.blogpost-date {
+    display: inline-block;
+}
+
+.blogpost-date p {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #e1e4e8;
+    display: inline-block;
+}
+
+.blogpost-line {
+    display: inline-block;
+    border-bottom: #e1e4e8 solid 1px;
+    width: 50px;
+    vertical-align: middle;
+    margin-bottom: 3px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.blogpostcontent button {
+    font-family: Inter,sans-serif;
+    padding: 16px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    background-color: #1074e7;
+    border: 1px solid #1074e7;
+    border-radius: 6px;
+    transition: .2s;
+}
+
+.blogpostcontent button a {
+    color: #fff;
+    transition: .2s;
+    position: relative;
+    left: -8px;
+}
+
+.blogpostcontent button:hover > a {
+    text-decoration: underline;
+    left: 8px;
+}
+
+.blogpostcontent button i {
+    opacity: 0;
+    transition: .2s;
+    position: relative;
+    left: 18px;
+    padding-top: 2px;
+}
+
+.blogpostcontent button:hover > i {
+    opacity: 1;
+    left: 0px;
+}
