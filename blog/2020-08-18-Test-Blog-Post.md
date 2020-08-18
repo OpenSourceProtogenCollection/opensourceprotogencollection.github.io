@@ -1,6 +1,5 @@
 ---
-layout: post
-title:  "Test Blog Post"
+layout: blog
 ---
 
 # OpenControl
