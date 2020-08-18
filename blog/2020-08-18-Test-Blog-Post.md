@@ -1,5 +1,7 @@
 ---
 layout: blog
+title: "Test Blog Post"
+description: "Testing out Jekyll Front Matter, its pretty cool!"
 ---
 
 # OpenControl
