@@ -56,7 +56,9 @@
 
             <div class="blogtags">
                 {% if page.tags %}
-                <div>{{ page.tags | join: "</div> <br> <div>" }}</div>
+                <p>{{ page.tags }}</p>
+                <p>{{ page.tags[0] }}</p>
+                <p>{{ page.tags[2] }}</p>
                 {% endif %}
             </div>
         </div>
