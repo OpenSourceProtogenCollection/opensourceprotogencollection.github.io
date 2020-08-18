@@ -1,6 +1,5 @@
 <html>
     <head>
-        <meta charset="utf-8">
         <base href="https://protogencollection.titusstudios.net/">
         <link rel="stylesheet" href="/assets/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
@@ -41,24 +40,27 @@
 
             <div class="blogheader">
                 <div class="blogcategory">
-                    <p>{{ post.category }}</p>
+                    <p>{{ page.category }}</p>
                 </div>
 
                 <div class="blogtitle">
-                    <p>{{ post.title }}</p>
+                    <p>{{ page.title }}</p>
                 </div>
             </div>
 
             <div class="blogdesc">
-                <p>{{ post.description }}</p>
+                <p>{{ page.description }}</p>
             </div>
 
             <div class="blogline"></div>
 
             <div class="blogtags">
+                {% if page.tags %}
+                <em>{{ page.tags | join: "</em> - <em>" }}</em>
                 <div class="blogtag">
                     <p>INCOMPLETE FEATURE</p>
                 </div>
+                {% endif %}
             </div>
         </div>
 
