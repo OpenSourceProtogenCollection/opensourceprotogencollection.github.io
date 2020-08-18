@@ -35,7 +35,7 @@
         <div class="blogpostcontent">
             <button>
                 <i class="fas fa-arrow-left"></i>
-                <a href="https://protogencollection.titusstudios.net/blog">Back to Blog Index</a>
+                <a href="https://protogencollection.titusstudios.net/blog">Back to Blog</a>
             </button>
 
             <div class="blogheader">
@@ -55,7 +55,12 @@
             <div class="blogline"></div>
 
             <div class="blogtags">
-                <p>stupid feature</p>
+                <span>[
+                    {% for tag in page.tags %}
+                      {% capture tag_name %}{{ tag }}{% endcapture %}
+                      <div class="blogtag"><p>{{ tag_name }}</p></div>
+                    {% endfor %}
+                  ]</span>
             </div>
         </div>
 
