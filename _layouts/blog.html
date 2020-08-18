@@ -56,10 +56,7 @@
 
             <div class="blogtags">
                 {% if page.tags %}
-                <em>{{ page.tags | join: "</em> - <em>" }}</em>
-                <div class="blogtag">
-                    <p>INCOMPLETE FEATURE</p>
-                </div>
+                <p>{{ page.tags | join: "</p> - <p>" }}</p>
                 {% endif %}
             </div>
         </div>
