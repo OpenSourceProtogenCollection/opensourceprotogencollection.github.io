@@ -32,6 +32,9 @@ $blockquote-border: $dove-grey !default;
     --backquote-bkg-orange: rgba(255, 159, 10, 0.2);
     --backquote-bkg-red: rgba(255, 69, 58, 0.2);
     --backquote-bkg-green: rgba(50, 215, 75, 0.2);
+    --tag-text: #0366d6;
+    --tag-bkg: #f1f8ff;
+    --tag-bkg-hover: #def;
 }
 
 .darkmode {
@@ -53,6 +56,9 @@ $blockquote-border: $dove-grey !default;
     --backquote-bkg-orange: rgba(255, 159, 10, 0.2);
     --backquote-bkg-red: rgba(255, 69, 58, 0.2);
     --backquote-bkg-green: rgba(50, 215, 75, 0.2);
+    --tag-text: #0366d6;
+    --tag-bkg: #f1f8ff;
+    --tag-bkg-hover: #def;
 }
 
 body {
