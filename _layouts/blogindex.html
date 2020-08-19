@@ -13,29 +13,30 @@
             </div>
 
             <div class="blogline"></div>
-        </div>
 
-        {% for post in site.tags[page.tag] %}
-            <div class="blogpost">
-                <a href="{{ post.url }}">
-                    <div class="blogpost-date">
-                        <p>{{ post.date | date_to_string }}</p>
-                    </div>
-                    <div class="blogpost-title">
-                        <p>{{ post.title }}</p>
-                    </div>
-                    <div class="blogpost-desc">
-                        <p>{{ post.description }}</p>
-                    </div>
-                    <div class="blogpost-tags">
-                        {% for tag in post.tags %}
-                            {% capture tag_name %}{{ tag }}{% endcapture %}
-                            <div class="blogtag"><a href="/tag/{{ tag_name }}">{{ tag_name }}</a></div>
-                        {% endfor %}
-                    </div>
-                </a>
-            </div>
-        {% endfor %}
+            {% for post in site.tags[page.tag] %}
+                <div class="blogpost">
+                    <a href="{{ post.url }}">
+                        <div class="blogpost-date">
+                            <p>{{ post.date | date_to_string }}</p>
+                        </div>
+                        <div class="blogpost-title">
+                            <p>{{ post.title }}</p>
+                        </div>
+                        <div class="blogpost-desc">
+                            <p>{{ post.description }}</p>
+                        </div>
+                        <div class="blogpost-tags">
+                            {% for tag in post.tags %}
+                                {% capture tag_name %}{{ tag }}{% endcapture %}
+                                <div class="blogtag"><a href="/tag/{{ tag_name }}">{{ tag_name }}</a></div>
+                            {% endfor %}
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+
+        </div>
 
         {% include footer.html %}
         
