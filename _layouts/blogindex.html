@@ -20,6 +20,7 @@
                         <div class="blogpost-date">
                             <p>{{ post.date | date_to_string }}</p>
                         </div>
+                        <div class="blogpost-line"></div>
                         <div class="blogpost-title">
                             <p>{{ post.title }}</p>
                         </div>
@@ -27,7 +28,7 @@
                             <p>{{ post.description }}</p>
                         </div>
                     </a>
-                    
+
                     <div class="blogpost-tags">
                         {% for tag in post.tags %}
                             {% capture tag_name %}{{ tag }}{% endcapture %}
