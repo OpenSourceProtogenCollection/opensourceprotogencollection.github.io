@@ -1,5 +1,8 @@
-# Hi! 
+---
+layout: blog
+title: "Updates 20/08/2020"
+category: "Blog"
+description: "Overview on some of the updates to our site, and more."
+tags: [ updates, blog ]
+---
 
-This is our First Blog Post of 2020.
-
-Please stick around to see what we have in store. Thank you.
