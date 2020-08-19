@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: hololens"
-tag: hololens
+title: "Tag: blog"
+tag: blog
 ---
