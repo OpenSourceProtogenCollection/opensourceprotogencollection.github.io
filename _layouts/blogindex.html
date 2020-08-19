@@ -38,13 +38,17 @@
                 </div>
             {% endfor %}
 
-            <div class="blogdesc">
-                <p>Find posts by Tags</p>
+            <div class="blogtags-desc-wrapper">
+                <div class="blogdesc">
+                    <p>Find posts by Tags</p>
+                </div>
             </div>
 
             <div class="blogline"></div>
 
-            {% include archive.html %}
+            <div class="blogtags-wrapper">
+                {% include archive-blogindex.html %}
+            </div>
         </div>
 
         <div class="container">
