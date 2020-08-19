@@ -1,5 +1,4 @@
 ---
-layout: tagpage
-title: "Tag: blog"
-tag: [ blog ]
+layout: blogindex
+tag: blog
 ---
