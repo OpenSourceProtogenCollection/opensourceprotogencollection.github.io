@@ -1,4 +1,10 @@
-# Setting Up ProtogenSSH
+---
+layout: docs
+title: "Setting Up ProtogenSSH"
+postcategory: "ProtogenSSH"
+description: "A light SSH client with a configurable user interface that makes it easy for the handler to manipulate the electronics when the suiter cannot."
+tags: [ protogenssh, docs ]
+---
 
 OSPC includes an Android app called ProtogenSSH, a light SSH client with a configurable user interface that makes it easy for the handler to manipulate the electronics when the suiter cannot. Currently an iOS version of ProtogenSSH is not available. Other SSH iOS clients such as [PiHelper](https://apps.apple.com/us/app/pihelper/id1369930932) may be of interest to iOS users.
 
