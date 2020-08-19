@@ -3,7 +3,7 @@ layout: blog
 title: "Mastering Markdown"
 category: "Developer"
 description: "Markdown is a simple, easy-to-use file syntax for styling all forms of writing. This is what the Open Source Protogen Collection uses, in combination with Jekyll, to make documents, blog posts, updates, etc... on our site."
-tags: [ Developer, Markdown, Docs ]
+tags: [ developer, markdown, docs ]
 ---
 
 > **NOTE:** This will be a simple overview of Markdown, you can find more info at: [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
