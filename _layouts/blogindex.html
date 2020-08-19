@@ -26,13 +26,14 @@
                         <div class="blogpost-desc">
                             <p>{{ post.description }}</p>
                         </div>
-                        <div class="blogpost-tags">
-                            {% for tag in post.tags %}
-                                {% capture tag_name %}{{ tag }}{% endcapture %}
-                                <div class="blogtag"><a href="/tag/{{ tag_name }}">{{ tag_name }}</a></div>
-                            {% endfor %}
-                        </div>
                     </a>
+                    
+                    <div class="blogpost-tags">
+                        {% for tag in post.tags %}
+                            {% capture tag_name %}{{ tag }}{% endcapture %}
+                            <div class="blogtag"><a href="/tag/{{ tag_name }}">{{ tag_name }}</a></div>
+                        {% endfor %}
+                    </div>
                 </div>
             {% endfor %}
 
