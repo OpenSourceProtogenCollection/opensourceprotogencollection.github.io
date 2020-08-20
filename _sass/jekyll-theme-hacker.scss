@@ -126,6 +126,7 @@ a:hover {
     text-align: left;
     float: left;
     margin-right: 10px;
+    max-width: 300px;
 }
 
 .copyright-left p {
@@ -505,15 +506,24 @@ iframe {
     margin: auto;
 }
 
+.navcontainer a:hover {
+    text-decoration: none;
+}
+
 .navlogo {
     width: 50px;
     height: 50px;
-    background-image: url("https://protogencollection.titusstudios.net/data/static/images/icon-whitecenter.png");
+    background-image: url("https://protogencollection.titusstudios.net/data/static/images/og-image.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
     margin-top: 5px;
     margin-bottom: 5px;
+    opacity: 0.5;
+}
+
+.navlogo:hover {
+    opacity: 1;
 }
 
 .navline {
@@ -759,7 +769,7 @@ h3 {
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 435px) {
     .navquicklinks {
         display: none;
     }
