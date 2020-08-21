@@ -1011,16 +1011,19 @@ h3 {
     display: block;
     text-align: center;
     position: relative;
-    animation: arrow_bounce 1s infinite;
+    animation: arrow_bounce 2s infinite;
 }
 
 @keyframes arrow_bounce {
     0% {
       transform: translateY(0);
     }
-    100% {
+    50% {
       transform: translateY(5px);
     }
+    100% {
+        transform: translateY(0);
+      }
 }
 
 .homepage-quickstart button {
