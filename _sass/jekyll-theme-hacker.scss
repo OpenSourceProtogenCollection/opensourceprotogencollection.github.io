@@ -969,20 +969,18 @@ h3 {
 }
 
 .homepage-slideshow {
+    font-family: Inter,sans-serif;
     position: absolute; 
     padding: 30px;
 }
 
 .homepage-slideshow-header {
-    font-family: Inter,sans-serif;
     font-weight: 600;
     font-size: 32px;
-    margin-top: 10px;
     color: var(--text); 
 }  
 
 .homepage-slideshow-desc {
-    font-family: Inter,sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
