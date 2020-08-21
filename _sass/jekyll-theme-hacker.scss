@@ -1021,7 +1021,11 @@ h3 {
     100% {
       transform: translateY(5px);
     }
-  }
+}
+
+.homepage-quickstart button {
+    margin: 0 10px;
+}
 
 button {
     font-family: Inter,sans-serif;
