@@ -1,0 +1,159 @@
+<html>
+    {% include head.html %}
+
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+        <style>
+            .quickStart-frame {
+                margin: auto;
+                max-width: 1000px;
+                font-family: Inter,sans-serif;
+                font-weight: 600;
+                font-size: 32px;
+                background-color: #f1f8ff;
+                border-radius: 8px;
+                padding: 20px;
+            }
+
+            .quickStart-frame button {
+                font-family: Inter,sans-serif;
+                padding: 16px 24px;
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff;
+                cursor: pointer;
+                background-color: #1074e7;
+                border: 1px solid #1074e7;
+                border-radius: 6px;
+                transition: .2s;
+                margin-top: 5px;
+                margin-right: 5px;
+            }
+
+            .quickStart-frame button:hover { 
+                background-color: #10a2e7;
+            }
+
+            .quickStart-question p {
+                margin: 0 0 15px 0;
+            }
+        </style>
+        </head>
+    <body>
+        {% include nav.html %}
+        
+        <button onclick="setPositon(1)">Get Started</button>
+
+        <div class="quickStart-frame" id="qss">
+        </div>
+
+        <script>
+            var getParams = function (url) {
+                var params = {};
+                var parser = document.createElement('a');
+                parser.href = url;
+                var query = parser.search.substring(1);
+                var vars = query.split('&');
+                for (var i = 0; i < vars.length; i++) {
+                    var pair = vars[i].split('=');
+                    params[pair[0]] = decodeURIComponent(pair[1]);
+                }
+                return params;
+            };
+
+            function updateQuickStart() {
+                function createButton(location,text,onclick) {
+                    var button = document.createElement("button")
+                    location.append(button)
+                    button.setAttribute("onclick",onclick)
+                    button.innerHTML = text
+                }
+
+                function createQuestion(location,text) {
+                    var qsquestion = document.createElement("div")
+                    location.append(qsquestion)
+                    qsquestion.setAttribute("class","quickStart-question")
+                    qsquestion.setAttribute("id","qssquestion")
+
+                    var question = document.createElement("p")
+                    qsquestion.append(question)
+                    question.innerHTML = text
+                }
+
+                function clearFrame() {
+                    var frame = document.getElementById("qss")
+                    frame.textContent = "";
+                }
+
+                if (parseInt(((getParams(window.location.href)).qspos),10) == 0) {
+                    clearFrame()
+                }
+
+                var frame = document.getElementById("qss")
+
+                switch(parseInt(((getParams(window.location.href)).qspos),10)) {
+                case 1:
+                    clearFrame()
+                    createQuestion(frame,"What are you creating?")
+                    createButton(frame,"Protogen Fursona","setPositon(2)")
+                    createButton(frame,"Protogen Fursuit","setPositon(3)")
+                    break;
+                case 2:
+                    clearFrame()
+                    createQuestion(frame,"How would you like to start?")
+                    createButton(frame,"Look at Species Guidelines","location.href='';")
+                    createButton(frame,"Find Line Art to use in Designing","location.href='';")
+                    createButton(frame,"Find an Artist","location.href='';")
+                    break;
+                }
+            }
+
+            updateQuickStart()
+
+            function setPositon(num) {
+                var updateQueryStringParam = function (key, value) {
+                    var baseUrl = [location.protocol, '//', location.host, location.pathname].join(''),
+                        urlQueryString = document.location.search,
+                        newParam = key + '=' + value,
+                        params = '?' + newParam;
+
+                    if (urlQueryString) {
+                        keyRegex = new RegExp('([\?&])' + key + '[^&]*');
+
+                        if (urlQueryString.match(keyRegex) !== null) {
+                            params = urlQueryString.replace(keyRegex, "$1" + newParam);
+                        } else {
+                            params = urlQueryString + '&' + newParam;
+                        }
+                    }
+                    window.history.replaceState({}, "", baseUrl + params);
+                };
+
+                updateQueryStringParam("qspos", num)
+                updateQuickStart()
+            }
+        </script>
+
+        {% include footer.html %}
+        
+        <script src="https://protogencollection.titusstudios.net/data/static/js/darkmode.js"></script>
+        <script src="https://protogencollection.titusstudios.net/data/static/js/blockquote-bkgselector.js"></script>
+        <script>
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+    
+            function mobilenav() {
+                var navmenu = document.getElementById("navmobilemenu");
+    
+                if (navmenu.style.display == "block") {
+                    navmenu.style.display = "none";
+                } else {
+                    navmenu.style.display = "block";
+                }
+            }
+    
+        </script>
+    </body>
+</html>
