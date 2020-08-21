@@ -990,6 +990,15 @@ h3 {
     max-width: 450px;
 }  
 
+.homepage-title {
+    text-align: center;
+    font-family: Inter,sans-serif;
+    font-weight: 600;
+    font-size: 55px;
+    color: var(--text);
+    padding: 0 10px;
+}
+
 button {
     font-family: Inter,sans-serif;
     padding: 16px 24px;
@@ -1001,6 +1010,4 @@ button {
     border: 1px solid #1074e7;
     border-radius: 6px;
     transition: .2s;
-    margin-top: 5px;
-    margin-right: 5px;
 }
