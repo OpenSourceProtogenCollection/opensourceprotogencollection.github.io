@@ -785,7 +785,7 @@ h3 {
     }
 }
 
-.blogcategory p, .blogtitle p, .blogdesc p, .blogtag a, .blogpost-title p {
+.blogcategory p, .blogtitle p, .blogdesc p, .blogtag a, .blogpost-title p, .homepage-slideshow p {
     margin: 0;
 }
 
@@ -986,4 +986,5 @@ h3 {
     line-height: 1.5;
     letter-spacing: -0.25px;
     color: var(--text);  
+    max-width: 450px;
 }  
