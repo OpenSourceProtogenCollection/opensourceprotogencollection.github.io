@@ -999,6 +999,30 @@ h3 {
     padding: 0 10px;
 }
 
+.homepage-quickstart {
+    width: 150px;
+}
+
+.homepage-quickstart p {
+    margin: 0;
+}
+
+.homepage-quickstart i {
+    display: block;
+    text-align: center;
+    position: relative;
+    animation: arrow_bounce 1s infinite;
+}
+
+@keyframes arrow_bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+
 button {
     font-family: Inter,sans-serif;
     padding: 16px 24px;
