@@ -1000,7 +1000,7 @@ h3 {
 }
 
 .homepage-quickstart {
-    width: 150px;
+    width: 200px;
     margin: auto;
 }
 
@@ -1008,7 +1008,6 @@ h3 {
     margin: 0;
     font-family: Inter,sans-serif;
     line-height: 1.5;
-    letter-spacing: -0.25px;
     color: var(--text);
     margin-bottom: 10px;
     text-align: center;
@@ -1017,11 +1016,13 @@ h3 {
 .homepage-quickstart-title {
     font-weight: 600;
     font-size: 20px;
+    margin: 0 24px;
 }
 
 .homepage-quickstart-desc {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
+    letter-spacing: -0.25px;
 }
 
 .homepage-quickstart i {
@@ -1045,7 +1046,7 @@ h3 {
 }
 
 .homepage-quickstart button {
-    margin: 0 10px;
+    margin: 0 36px;
 }
 
 button {
