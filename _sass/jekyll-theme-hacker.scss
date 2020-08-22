@@ -1001,10 +1001,24 @@ h3 {
 
 .homepage-quickstart {
     width: 150px;
+    margin: auto;
 }
 
 .homepage-quickstart p {
     margin: 0;
+    font-family: Inter,sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: -0.25px;
+    color: var(--text);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.homepage-quickstart-title {
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .homepage-quickstart i {
@@ -1012,6 +1026,7 @@ h3 {
     text-align: center;
     position: relative;
     animation: arrow_bounce 2s infinite;
+    color: #1074e7;
 }
 
 @keyframes arrow_bounce {
