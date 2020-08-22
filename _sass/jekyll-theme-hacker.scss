@@ -1007,8 +1007,6 @@ h3 {
 .homepage-quickstart p {
     margin: 0;
     font-family: Inter,sans-serif;
-    font-weight: 400;
-    font-size: 18px;
     line-height: 1.5;
     letter-spacing: -0.25px;
     color: var(--text);
@@ -1019,6 +1017,11 @@ h3 {
 .homepage-quickstart-title {
     font-weight: 600;
     font-size: 20px;
+}
+
+.homepage-quickstart-desc {
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .homepage-quickstart i {
