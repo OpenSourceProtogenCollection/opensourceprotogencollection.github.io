@@ -17,5 +17,5 @@ defaults:
     values:
       sitemap:         false
 
-paginate: 8
+paginate: 1
 paginate_path: "/blog/page:num/"
