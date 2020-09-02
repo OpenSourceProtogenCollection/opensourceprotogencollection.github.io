@@ -44,16 +44,16 @@
 
             <div class="blognav">
                 {% if paginator.previous_page %}
-                    <button class="" onclick="window.location = '{{ paginator.previous_page_path }}'">Previous</button>
+                    <button class="" onclick="window.location = '{{ paginator.previous_page_path | relative_url }}'">Previous</button>
                 {% else %}
                     <button class="blog-button-blackout">Previous</button>
                 {% endif %}
-                
+
                 {% if paginator.next_page %}
-                    <button class="" onclick="window.location = '{{ paginator.next_page_path }}'">Next</button>
+                    <button class="" onclick="window.location = '{{ paginator.next_page_path | relative_url }}'">Next</button>
                 {% else %}
                     <button class="blog-button-blackout">Next</button>
-                {% endif %}                
+                {% endif %}            
             </div>
 
             <div class="blogtags-desc-wrapper">
