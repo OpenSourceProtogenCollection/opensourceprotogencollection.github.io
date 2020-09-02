@@ -7,6 +7,7 @@ logo: /data/static/images/icon-transparent.png
 gems: 
       - jemoji
       - jekyll-sitemap
+      - jekyll-paginate
       
 defaults:
   -
@@ -16,4 +17,5 @@ defaults:
     values:
       sitemap:         false
 
-      
+paginate: 8
+paginate_path: "/blog/page:num/"

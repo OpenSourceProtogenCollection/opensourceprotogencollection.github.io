@@ -16,29 +16,45 @@
 
             <div class="blogline"></div>
 
-            {% for post in site.tags[page.tag] %}
-                <div class="blogpost">
-                    <a href="{{ post.url }}">
-                        <div class="blogpost-date">
-                            <p>{{ post.date | date_to_string }}</p>
-                        </div>
-                        <div class="blogpost-line"></div>
-                        <div class="blogpost-title">
-                            <p>{{ post.title }}</p>
-                        </div>
-                        <div class="blogpost-desc">
-                            <p>{{ post.description }}</p>
-                        </div>
-                    </a>
+            {% for post in paginator.posts %}
+                {% for post in site.tags[page.tag] %}
+                    <div class="blogpost">
+                        <a href="{{ post.url }}">
+                            <div class="blogpost-date">
+                                <p>{{ post.date | date_to_string }}</p>
+                            </div>
+                            <div class="blogpost-line"></div>
+                            <div class="blogpost-title">
+                                <p>{{ post.title }}</p>
+                            </div>
+                            <div class="blogpost-desc">
+                                <p>{{ post.description }}</p>
+                            </div>
+                        </a>
 
-                    <div class="blogpost-tags">
-                        {% for tag in post.tags %}
-                            {% capture tag_name %}{{ tag }}{% endcapture %}
-                            <div class="blogtag"><a href="/tag/{{ tag_name }}">{{ tag_name }}</a></div>
-                        {% endfor %}
+                        <div class="blogpost-tags">
+                            {% for tag in post.tags %}
+                                {% capture tag_name %}{{ tag }}{% endcapture %}
+                                <div class="blogtag"><a href="/tag/{{ tag_name }}">{{ tag_name }}</a></div>
+                            {% endfor %}
+                        </div>
                     </div>
-                </div>
+                {% endfor %}
             {% endfor %}
+
+            <div class="blognav">
+                {% if paginator.previous_page %}
+                    <button class="" onclick="window.location = '{{ paginator.previous_page_path }}'">Previous</button>
+                {% else %}
+                    <button class="blog-button-blackout">Previous</button>
+                {% endif %}
+                
+                {% if paginator.next_page %}
+                    <button class="" onclick="window.location = '{{ paginator.next_page_path }}'">Next</button>
+                {% else %}
+                    <button class="blog-button-blackout">Next</button>
+                {% endif %}                
+            </div>
 
             <div class="blogtags-desc-wrapper">
                 <div class="blogdesc">
