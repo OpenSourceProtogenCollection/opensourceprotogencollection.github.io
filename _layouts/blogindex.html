@@ -17,7 +17,6 @@
             <div class="blogline"></div>
 
             {% for post in paginator.posts %}
-                {% for post in site.tags[page.tag] %}
                     <div class="blogpost">
                         <a href="{{ post.url }}">
                             <div class="blogpost-date">
@@ -39,21 +38,30 @@
                             {% endfor %}
                         </div>
                     </div>
-                {% endfor %}
             {% endfor %}
 
             <div class="blognav">
                 {% if paginator.previous_page %}
-                    <button class="" onclick="window.location = '{{ paginator.previous_page_path | relative_url }}'">Previous</button>
+                    {% if paginator.page == 2 %}
+                        <button>
+                            <a href="/">Previous</a>
+                        </button>
+                    {% else %}
+                        <button>
+                            <a href="/page{{paginator.next_page}}">Previous</a>
+                        </button>
+                    {% endif %}
                 {% else %}
                     <button class="blog-button-blackout">Previous</button>
-                {% endif %}
-
+                {% endif %}      
+                
                 {% if paginator.next_page %}
-                    <button class="" onclick="window.location = '{{ paginator.next_page_path | relative_url }}'">Next</button>
+                    <button>
+                        <a href="/page{{paginator.next_page}}">Next</a>
+                    </button>
                 {% else %}
                     <button class="blog-button-blackout">Next</button>
-                {% endif %}            
+                {% endif %}
             </div>
 
             <div class="blogtags-desc-wrapper">
@@ -76,24 +84,5 @@
         </div>
 
         {% include footer.html %}
-        
-        <script src="https://protogencollection.titusstudios.net/data/static/js/darkmode.js"></script>
-        <script src="https://protogencollection.titusstudios.net/data/static/js/blockquote-bkgselector.js"></script>
-        <script>
-            function backToTop() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-    
-            function mobilenav() {
-                var navmenu = document.getElementById("navmobilemenu");
-    
-                if (navmenu.style.display == "block") {
-                    navmenu.style.display = "none";
-                } else {
-                    navmenu.style.display = "block";
-                }
-            }
-        </script>
     </body>
 </html>
