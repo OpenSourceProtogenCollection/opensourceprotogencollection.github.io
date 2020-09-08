@@ -4,10 +4,8 @@ url: "https://protogencollection.titusstudios.net/" # the hostname & protocol fo
 title: Open Source Protogen Collection
 description: Creating FOSS Protogen Setups For Everyone, All the resources for building your own Protogen Fursuit.
 logo: /data/static/images/icon-transparent.png
-gems: 
-      - jemoji
-      - jekyll-sitemap
-      - jekyll-paginate
+paginate:         5
+gems:             [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
       
 defaults:
   -
@@ -16,6 +14,3 @@ defaults:
       path:            "data/*"
     values:
       sitemap:         false
-
-paginate: 5
-paginate_path: "/blog/page:num/"
