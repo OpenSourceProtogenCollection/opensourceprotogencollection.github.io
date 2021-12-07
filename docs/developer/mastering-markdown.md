@@ -95,4 +95,4 @@ If you made, or found, a mistake in one of the pages - Dont worry! You can easil
 
 
 ## Everything you publish is accessible to the Whole World
-Please be sure, that you are following our [Terms and Conditions](https://protogencollection.titusstudios.net/legal/terms-and-conditions), all Copyright, COPPA, etc.. Laws before publishing a page. Note that it is easy to edit a page, but it is hard for us to get a page completely off a Search Engine (such as Google). If you are unsure, please contact someone in our team to review.
+Please be sure, that you are following our [Terms and Conditions](https://protogencollection.aerofur.nz/legal/terms-and-conditions), all Copyright, COPPA, etc.. Laws before publishing a page. Note that it is easy to edit a page, but it is hard for us to get a page completely off a Search Engine (such as Google). If you are unsure, please contact someone in our team to review.
