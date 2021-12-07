@@ -27,7 +27,7 @@ For the purposes of these Terms and Conditions:
 
 - *Third-party Social Media Service* means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
 
-- *Website* refers to this collection of webpages as part of the Open Source Protogen Collection, accessible from <a href="https://protogencollection.titusstudios.net/" rel="external nofollow noopener" target="_blank">https://protogencollection.titusstudios.net/
+- *Website* refers to this collection of webpages as part of the Open Source Protogen Collection, accessible from <a href="https://protogencollection.aerofur.nz/" rel="external nofollow noopener" target="_blank">https://protogencollection.aerofur.nz/
 
 - *You* means the individual accessing or using the Service, or the Organization, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 
@@ -108,4 +108,4 @@ By continuing to access or use Our Service after those revisions become effectiv
 
 ## Contact Us
 
-If you have any questions about these Terms and Conditions, You can contact us by visiting this page on our website: [https://protogencollection.titusstudios.net/contact](https://protogencollection.titusstudios.net/contact)
+If you have any questions about these Terms and Conditions, You can contact us by visiting this page on our website: [https://protogencollection.aerofur.nz/contact](https://protogencollection.aerofur.nz/contact)

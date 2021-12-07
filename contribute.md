@@ -17,7 +17,7 @@ The best place to start is taking a look at the [repositories](https://github.co
 
 Many of our repositories track issues and feature requests either through the Issues board or the Projects board, so check those places to see where improvements can be made.
 
-If you don't have much programming experience but still want to help, our documentation could use a hand. Check out [our markdown guide](https://protogencollection.titusstudios.net/docs/developer/mastering-markdown) for details on how to format documentation.
+If you don't have much programming experience but still want to help, our documentation could use a hand. Check out [our markdown guide](https://protogencollection.aerofur.nz/docs/developer/mastering-markdown) for details on how to format documentation.
 
 ## Reporting Issues
 
@@ -35,7 +35,7 @@ Please use our issue templates to report issues. This allows you to provide us a
 
 ## Adding a New Implementation
 
-Have a new way to control the matrices? Found a matrix you're looking to support, or a library that you feel some might prefer to use? If you have a new implementation that you think could benefit others, feel free to reach out to one of our main [contributors](https://protogencollection.titusstudios.net/contributors) about adding your project to our GitHub organization.
+Have a new way to control the matrices? Found a matrix you're looking to support, or a library that you feel some might prefer to use? If you have a new implementation that you think could benefit others, feel free to reach out to one of our main [contributors](https://protogencollection.aerofur.nz/contributors) about adding your project to our GitHub organization.
 
 
 ## License

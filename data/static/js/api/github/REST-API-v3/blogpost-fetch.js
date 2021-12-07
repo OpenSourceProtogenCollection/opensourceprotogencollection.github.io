@@ -1,5 +1,5 @@
 const api_TreeURL = "https://api.github.com/repos/OpenSourceProtogenCollection/opensourceprotogencollection.github.io/git/trees/master?recursive=1";
-const website_Domain = "https://protogencollection.titusstudios.net/"
+const website_Domain = "https://protogencollection.aerofur.nz/"
 
 fetch(api_TreeURL)
 	.then(function(response) {

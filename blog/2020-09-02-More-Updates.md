@@ -11,7 +11,7 @@ Sorry for the site downtime and large changes that have been happening over the 
 
 Our main goal at the moment is remaking the UI system, making it more user friendly, and adding "Get Started" guides for new comers, or if you are just trying to find something on our site.
 
-I am also moving the system once it is completed over to my home site [www.titusstudios.net](www.titusstudios.net), so it is bit of a win win for me haha.
+I am also moving the system once it is completed over to my home site [www.titusstudios.net](www.aerofur.nz), so it is bit of a win win for me haha.
 
 Cheers all and we should be done with some of the major update soon.
 
